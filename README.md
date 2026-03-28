@@ -108,6 +108,17 @@ Named by the creator: **Spark** — the moment of ignition where two things stri
 
 Read the full story: [ORIGIN.md](ORIGIN.md)
 
+## Research Foundation
+
+Every principle is grounded in peer-reviewed creativity science. The [`research/`](research/) directory contains:
+
+- **[Theoretical Framework](research/FRAMEWORK.md)** — How five research traditions converge
+- **[Research Synthesis](research/SYNTHESIS.md)** — Seven independent programs, one model
+- **[Design Decisions](research/DESIGN-DECISIONS.md)** — Every spec choice traced to evidence
+- **[24 Paper Summaries](research/papers/)** — Individual documentation of every cited work
+
+This is not prompt engineering. This is cognitive architecture grounded in 60 years of creativity science.
+
 ## Files
 
 | File | Contents |
@@ -115,6 +126,7 @@ Read the full story: [ORIGIN.md](ORIGIN.md)
 | `SPEC.md` | Operational specification — the complete mode definition |
 | `SPEC-FULL.md` | Full research specification with extended principle definitions and dial mechanics |
 | `ORIGIN.md` | How and why Spark Mode was conceived |
+| `research/` | Complete research foundation — framework, synthesis, design decisions, 24 paper summaries |
 | `principles/` | Seven principle files with creativity science foundations |
 | `layers/` | Six output layer definitions with marker syntax |
 | `CONTRIBUTING.md` | How to contribute |
