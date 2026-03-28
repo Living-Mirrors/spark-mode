@@ -862,7 +862,8 @@ dynamicsSim('bisoc-c','bisoc');
     {n:'Emergence',s:'Principle 7',d:'Phase change. The spark catches. You cannot force it.'},
   ];
 
-  let fuseProgress=0,autoPlay=true,autoTimer=0;
+  let fuseProgress=0,autoTimer=0;
+  const ROTATE_INTERVAL=.024; // ~2 seconds per principle at .001 per tick
   let nodes=[];
 
   function rs(){
@@ -893,17 +894,14 @@ dynamicsSim('bisoc-c','bisoc');
     t+=.005;
     ctx.clearRect(0,0,w,h);
 
-    // Auto-advance fuse
-    if(autoPlay){
-      autoTimer+=.005;
-      if(autoTimer>.012){
-        fuseProgress+=.001;
-        if(fuseProgress>1.15){fuseProgress=0;active=0}
-        // Update active based on fuse progress
-        const newActive=Math.min(6,Math.floor(fuseProgress*7));
-        if(newActive!==active&&newActive<7){active=newActive;updateDetail()}
-        autoTimer=0;
-      }
+    // Auto-advance fuse — always rotating
+    autoTimer+=.005;
+    if(autoTimer>ROTATE_INTERVAL){
+      fuseProgress+=.001;
+      if(fuseProgress>1.15){fuseProgress=0;active=0}
+      const newActive=Math.min(6,Math.floor(fuseProgress*7));
+      if(newActive!==active&&newActive<7){active=newActive;updateDetail()}
+      autoTimer=0;
     }
 
     // Draw the fuse path
@@ -1028,8 +1026,8 @@ dynamicsSim('bisoc-c','bisoc');
     const r=c.getBoundingClientRect(),cx=e.clientX-r.left,cy=e.clientY-r.top;
     for(let i=0;i<7;i++){
       if(Math.sqrt((nodes[i].x-cx)**2+(nodes[i].y-cy)**2)<35){
-        active=i;autoPlay=false;fuseProgress=(i+.5)/7;
-        draw;updateDetail();break;
+        active=i;fuseProgress=(i+.5)/7;autoTimer=-.15; // brief pause then continues
+        updateDetail();break;
       }
     }
   });
@@ -1043,8 +1041,8 @@ dynamicsSim('bisoc-c','bisoc');
     c.style.cursor=hov>=0?'pointer':'default';
   });
 
-  // Double click restarts auto
-  c.addEventListener('dblclick',()=>{autoPlay=true;fuseProgress=0;active=0;updateDetail()});
+  // Click anywhere empty to restart from beginning
+  c.addEventListener('dblclick',()=>{fuseProgress=0;active=0;updateDetail()});
 
   window.addEventListener('resize',()=>{rs()});
   rs();updateDetail();draw();
