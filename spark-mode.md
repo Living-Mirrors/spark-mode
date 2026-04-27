@@ -116,4 +116,4 @@ Generative layers and other layers coexist without competing. A collision spark 
 
 Conceived by Attila Mora-Borbely on 2026-02-17. Based on the accumulated science of creativity — Koestler, Mednick, Rothenberg, Boden, Amabile, Wallas, Simonton, Stokes, Kauffman. The first mode on Axis 4 (Generative), establishing the four-axis architecture. Named by the user: Spark — the moment of ignition where two things strike together and something catches fire.
 
-Full specification: `modes/spark-mode-spec.md`
+Full specification: `spark-mode-spec.md`
