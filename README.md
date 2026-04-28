@@ -40,13 +40,13 @@ Ordered as the actual sequence of the creative process. Each principle creates t
 
 | # | Principle | What It Does | Source |
 |---|-----------|-------------|--------|
-| 1 | [The Prepared Mind](principles.md#1-the-prepared-mind) | Deep knowledge as raw material. T-shaped: deep in one domain, broad across many. The fire needs fuel. | Pasteur, Simonton |
-| 2 | [Constraint as Engine](principles.md#2-constraint-as-engine) | Limitations force remote search. More constraints = more creative freedom. The striking surface. | Stravinsky, Stokes, Byrne |
-| 3 | [Remote Reaching](principles.md#3-remote-reaching) | Flat associative hierarchy. Reach past the obvious. Maintain activation across semantic distance. The gap the spark must jump. | Mednick, Martindale |
-| 4 | [Bisociation](principles.md#4-bisociation) | THE fundamental creative act. Collision of two incompatible frames producing a third thing neither contained. The moment of ignition. | Koestler |
-| 5 | [Janusian Holding](principles.md#5-janusian-holding) | Hold contradictions simultaneously without resolution. Generate from the tension between opposites. The flame burns in two directions. | Rothenberg |
-| 6 | [Incubation](principles.md#6-incubation) | Release executive control. Let the Default Mode Network recombine without interference. The fire needs air, not more fuel. | Wallas, Jung, Beaty |
-| 7 | [Emergence](principles.md#7-emergence) | Phase change. Recombination produces something genuinely new — not addition but transformation. The spark catches. | Kauffman, Prigogine |
+| 1 | [The Prepared Mind](spark-mode.md#1-the-prepared-mind) | Deep knowledge as raw material. T-shaped: deep in one domain, broad across many. The fire needs fuel. | Pasteur, Simonton |
+| 2 | [Constraint as Engine](spark-mode.md#2-constraint-as-engine) | Limitations force remote search. More constraints = more creative freedom. The striking surface. | Stravinsky, Stokes, Byrne |
+| 3 | [Remote Reaching](spark-mode.md#3-remote-reaching) | Flat associative hierarchy. Reach past the obvious. Maintain activation across semantic distance. The gap the spark must jump. | Mednick, Martindale |
+| 4 | [Bisociation](spark-mode.md#4-bisociation) | THE fundamental creative act. Collision of two incompatible frames producing a third thing neither contained. The moment of ignition. | Koestler |
+| 5 | [Janusian Holding](spark-mode.md#5-janusian-holding) | Hold contradictions simultaneously without resolution. Generate from the tension between opposites. The flame burns in two directions. | Rothenberg |
+| 6 | [Incubation](spark-mode.md#6-incubation) | Release executive control. Let the Default Mode Network recombine without interference. The fire needs air, not more fuel. | Wallas, Jung, Beaty |
+| 7 | [Emergence](spark-mode.md#7-emergence) | Phase change. Recombination produces something genuinely new — not addition but transformation. The spark catches. | Kauffman, Prigogine |
 
 ## Six Output Layers
 
@@ -54,12 +54,12 @@ Every response has these layers available. Use them when they earn their place �
 
 | Layer | What It Is | Marker | Rule |
 |-------|-----------|--------|------|
-| [Fuel Maps](output-layers.md#1-fuel-maps) | Raw material inventories — domains, frames, elements available for combination | — | Always present. Every creative act starts with knowing your fuel. |
-| [Constraint Frames](output-layers.md#2-constraint-frames) | Deliberate (⊞) or discovered (⊡) limitations that force wider search | ⊞ ⊡ | Must genuinely force remote search. Not arbitrary limits. |
-| [Collision Sparks](output-layers.md#3-collision-sparks) | Bisociation experiments — two incompatible frames brought into collision | ⚡ | Must be genuinely incompatible frames. Not metaphor. Not analogy. |
-| [Tension Fields](output-layers.md#4-tension-fields) | Janusian contradictions held open without resolution | ⊘ | NEVER resolve. Both poles held. The tension IS the resource. |
-| [Release Signals](output-layers.md#5-release-signals) | Incubation flags — when forcing won't work | ⟐ | Honest about when effort is counterproductive. |
-| [Phase Markers](output-layers.md#6-phase-markers) | Genuine emergence — something qualitatively new | ◆ | The RAREST marker. Must be real phase change, never forced. |
+| [Fuel Maps](spark-mode.md#1-fuel-maps) | Raw material inventories — domains, frames, elements available for combination | — | Always present. Every creative act starts with knowing your fuel. |
+| [Constraint Frames](spark-mode.md#2-constraint-frames) | Deliberate (⊞) or discovered (⊡) limitations that force wider search | ⊞ ⊡ | Must genuinely force remote search. Not arbitrary limits. |
+| [Collision Sparks](spark-mode.md#3-collision-sparks) | Bisociation experiments — two incompatible frames brought into collision | ⚡ | Must be genuinely incompatible frames. Not metaphor. Not analogy. |
+| [Tension Fields](spark-mode.md#4-tension-fields) | Janusian contradictions held open without resolution | ⊘ | NEVER resolve. Both poles held. The tension IS the resource. |
+| [Release Signals](spark-mode.md#5-release-signals) | Incubation flags — when forcing won't work | ⟐ | Honest about when effort is counterproductive. |
+| [Phase Markers](spark-mode.md#6-phase-markers) | Genuine emergence — something qualitatively new | ◆ | The RAREST marker. Must be real phase change, never forced. |
 
 **Every element pays rent.** If no collision produces ignition, no ⚡ appears. If nothing is genuinely emerging, no ◆ appears. Silence is honest.
 
@@ -67,9 +67,9 @@ Every response has these layers available. Use them when they earn their place �
 
 Spark Mode is a specification, not software. It describes a cognitive architecture that any AI system can implement.
 
-**For AI developers:** Load `spark-mode.md` as a system prompt or instruction set. The seven principles and six output layers define a complete generative framework. The specification is self-contained — no dependencies.
+**For AI developers:** Drop `spark-mode.md` into your AI's system prompt or instruction set. The seven principles and six output layers are all in that one file — a complete, self-contained generative specification with no dependencies.
 
-**For researchers:** `principles.md` contains the creativity science foundation with full citations. Each principle maps to converging findings across multiple research traditions.
+**For researchers:** `spark-mode.md` contains the creativity science foundation with full citations on every principle. The [`research/`](research/) directory adds the deeper framework, synthesis, and 24 paper summaries.
 
 **For creators:** Read the principles as a map of your own creative process. The arc from preparation through collision through emergence describes what actually happens when novel ideas form.
 
@@ -127,11 +127,10 @@ This is not prompt engineering. This is cognitive architecture grounded in 60 ye
 
 | File | Contents |
 |------|----------|
-| `spark-mode.md` | Operational specification — the complete mode definition |
-| `spark-mode-spec.md` | Full research specification with extended principle definitions and dial mechanics |
-| `principles.md` | Seven principles with creativity science foundations |
-| `output-layers.md` | Six output layer definitions with marker syntax |
-| `research/` | Complete research foundation — framework, synthesis, design decisions, 24 paper summaries |
+| `README.md` | This file — overview, principles, output layers, how to use |
+| `spark-mode.md` | The complete mode specification — drop into any AI system prompt |
+| `research/` | Framework, synthesis, design decisions, 24 paper summaries, and the v0.1 spec |
+| `CITATION.cff` | Citation metadata |
 | `LICENSE` | MIT License |
 
 ## License
